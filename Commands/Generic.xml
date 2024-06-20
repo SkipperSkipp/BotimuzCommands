@@ -738,7 +738,7 @@
 		</responses>
 	</command>
 
-	<command>
+	<!-- <command>
 		<name>GTAM when</name>
 		<maxWords>15</maxWords>
 		<requiredwords>
@@ -771,7 +771,7 @@
 		<responses>
 			<response>GTAMarathon is the GTA speedrunning community's yearly speedrun marathon happening RIGHT NOW which Josh will be in doing runs and tech. Schedule: https://oengus.io/marathon/gtam2024/schedule Watch: https://www.twitch.tv/GTAMarathon</response>
 		</responses>
-	</command>
+	</command> -->
 
 	<!-- <command>
 		<name>Buy viewers ban</name>
@@ -824,6 +824,29 @@
 		</requiredwords>
 		<responses>
 			<response>https://lgbtqia.fandom.com/wiki/Demisexual</response>
+		</responses>
+	</command>
+
+	<command>
+		<name>Random Tech Issue</name>
+		<maxWords>20</maxWords>
+		<requiredWords>
+			<group>
+				<word wholeword="true">bot</word>
+				<word>botimuz</word>
+			</group>
+			<group>
+				<word>why</word>
+				<word>what</word>
+				<word>how</word>
+			</group>
+			<group>
+				<word wholeword="true">tech issue</word>
+				<word wholeword="true">joshTechIssue</word>
+			</group>
+		</requiredWords>
+		<responses data0="RandomTextFileLine" string0="C:\Users\Joshimuz\Documents\GitHub\BotimuzCommands\Tech Issues.txt">
+			<response>:joshTechIssue: Please wait for the stream to start/continue. We're currently experiencing tech issues because [0] :joshTechIssue:</response>
 		</responses>
 	</command>
 
